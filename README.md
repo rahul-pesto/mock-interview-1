@@ -9,16 +9,16 @@ This repository will help in evaluating the candidate for first module of the co
 
 ## Task 1
 
-Align the object to the center (exact center) of parent container
+Align the object to the center (exact center) of parent container.
 
 ## Task 2
 
-Create a circle with green colour and align it the top right corner of the card. Thus, it should appear as if the card is online
+Create a circle with green colour and align it the top right corner of the card. Thus, it should appear as if the card is online.
 
 ## Task 3
 
-Reduce the load on main thread in order to make the UI interactive while the calculation is going on in the background
+Reduce the load on main thread in order to make the UI interactive while the calculation is going on in the background.
 
 ## Task 4
 
-Create a prototype for strings named as replaceMyName, which should replace all the instance of the string in the given string with the provided string
+Create a prototype for strings named as replaceMyName, which should replace all the instance of the string in the given string with the provided string.
