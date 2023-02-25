@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove load on main thread</title>
+</head>
+
+<body>
+
+  <h1>Remove load on main thread during heavy computation</h1>
+  <div style="display: flex; gap: 20px;">
+    <button onclick="calculate()">Calculate</button>
+    <span id="status">ready</span>
+    <button onclick="add()">Add a count</button>
+    <span id="result">0</span>
+  </div>
+
+  <script>
+    let res = 0;
+    let sta = "ready";
+    let resultContainer = document.getElementById("result");
+    let statusContainer = document.getElementById("status");
+    function calculate() {
+      statusContainer.innerHTML = "calculating"
+
+      for (i = 0; i < 10; i++) {
+        for (j = 0; j < 100000; j++) {
+          statusContainer.innerHTML = "ready"
+        }
+      }
+    }
+
+    function add() {
+      res += 1;
+      resultContainer.innerHTML = res;
+    }
+  </script>
+
+</body>
+
+</html>
