@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replace My Name</title>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Replace all instance of my name</h1>
+    <input name="myName" type="text" placeholder="Enter your name" />
+    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    <button>Process</button>
+    <pre>Result</pre>
+
+    <span>Instruction:</span>
+    <ul>
+      <li>
+        You are expected to create a custom prototype to window object, similar to replaceAll
+      </li>
+      <li>
+        Process CTA should call a function that should read inputs from text area and input box
+      </li>
+      <li>
+        Function should use the custom method replaceMyName created by you
+      </li>
+      <li>
+        Function should replace all the instace of the given name from description
+      </li>
+      <li>
+        Result should be shown inside given pre tag
+      </li>
+      <li>
+        Sample Input: <br />
+        Rahul Agrawal<br />
+        Rahul Agrawal is an edurite technologist. Rahul Agrawal wants to be a pilot some day soon after his planned
+        retirement. Rahul Agrawal is struggling hard to create a balance between his work, side projects and family
+        affairs. Help Rahul Agrawal attain peace in his life 😄.
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
